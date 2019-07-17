@@ -20,6 +20,11 @@ h2 {
   color: #4aaaa5;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 header {
   background-color: #ffffff;
   height: 100px;
@@ -92,6 +97,6 @@ footer {
   background-color: #ffffff;
   text-align: center;
   display: inline-block;
-  margin-top: 70px;
+  margin-top: 50px;
   border: solid 2px #dddddd;
 }
