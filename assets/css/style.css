@@ -51,7 +51,7 @@ footer {
 
 .tab_positioner {
   visibility: hidden;
-  width: 233px;
+  width: 150px;
   float: left;
 }
 
@@ -73,7 +73,7 @@ footer {
 
 .tab_holder {
   height: 100px;
-  width: 700px;
+  width: 500px;
   background-color: #ffffff;
   text-align: center;
   float: right;
