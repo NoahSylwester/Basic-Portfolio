@@ -97,6 +97,10 @@ footer {
   color: #4aaaa5;
 }
 
+.tab a:active {
+  color: #48c4bd;
+}
+
 .tab_holder {
   height: 100px;
   width: 500px;
@@ -163,6 +167,14 @@ footer {
 
 .portfolio_pic:hover {
   border: solid 2px #4aaaa5;
+}
+
+.portfolio_pic:active {
+  border: solid 2px #48c4bd;
+}
+
+.portfolio_pic:active ~ .banner {
+  background-color: #48c4bd;
 }
 
 .banner {
