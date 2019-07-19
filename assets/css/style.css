@@ -33,11 +33,15 @@ header {
 
 button {
   font-size: 20px;
-  float: right;
+  float: left;
   background-color: #4aaaa5;
   color: #ffffff;
   padding: 10px;
-  margin: 5px;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #48c4bd;
 }
 
 footer {
@@ -63,6 +67,10 @@ footer {
   margin-right: 25px;
 }
 
+.bio {
+  line-height: 30px;
+}
+
 .tab_positioner {
   visibility: hidden;
   width: 113px;
@@ -83,6 +91,10 @@ footer {
   margin-top: 39px;
   display: inline-block;
   font-size: 20px;
+}
+
+.tab a:hover {
+  color: #4aaaa5;
 }
 
 .tab_holder {
@@ -131,4 +143,36 @@ footer {
   margin: 10px auto;
   text-align: left;
   font-size: 15px;
+}
+
+.portfolio_container {
+  width: 200px;
+  height: 200px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.portfolio_pic {
+  width: 140px;
+  height: 120px;
+  margin: 10px;
+  border: solid 2px #dddddd;
+}
+
+.portfolio_pic:hover {
+  border: solid 2px #4aaaa5;
+}
+
+.banner {
+  height: 17px;
+  width: 140px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  bottom: 80px;
+  z-index: 10;
 }
