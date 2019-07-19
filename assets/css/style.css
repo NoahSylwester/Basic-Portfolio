@@ -158,6 +158,7 @@ footer {
   height: 120px;
   margin: 10px;
   border: solid 2px #dddddd;
+  object-fit: cover;
 }
 
 .portfolio_pic:hover {
