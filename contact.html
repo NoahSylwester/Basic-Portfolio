@@ -3,38 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <title>Noah Sylwester</title>
-    <link rel="stylesheet" href="./assets/css/style_flexbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style_bs.css">
   </head>
-  <body>
-      <header>
-          <div class="title_tab">
-            <h1>Noah Sylwester</h1>
-          </div>
-        <div class="tab_holder">
-          <span class="tab">
-            <a href="index.html">About</a>
-          </span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span class="tab">
-              <a href="portfolio.html">Portfolio</a>
-          </span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span class="tab">
-              <a href="contact.html">Contact</a>
-          </span>
+  <body class="container to-edge">
+      <header class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3 title_tab">
+          <h1>Noah Sylwester</h1>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3 tab_holder">
+            <span class="tab">
+              <a href="index.html">About</a>
+            </span><span>&nbsp;&nbsp;&nbsp;</span>
+            <span class="tab">
+                <a href="portfolio.html">Portfolio</a>
+            </span><span>&nbsp;&nbsp;&nbsp;</span>
+            <span class="tab">
+                <a href="contact.html">Contact</a>
+            </span> <span class="tab">
+        </div>
+        <div class="col-sm-2"></div>
         </div>
       </header>
-      <div class="background">
-          <div class="main">
-            <h2>Contact</h2>
-            <hr class="line"><br>
-            <p>Name</p>
-            <input class="contact_input">
-            <p>Email</p>
-            <input class="contact_input">
-            <p>Message</p>
-            <input class="message_input">
-            <button>Submit</button>
+        <div class="row">
+          <div class="col-sm-8 container main">
+            <div class="row">
+              <h2 class="col-sm-12">Contact</h2>
+            </div>
+            <div class="row center">
+              <hr class="col-sm-11 line">
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                  <p class="input-text">Name</p>
+                  <input class="contact_input">
+                  <p class="input-text">Email</p>
+                  <input class="contact_input">
+                  <p class="input-text">Message</p>
+                  <input class="message_input">
+                  <button class="btn btn-lg">Submit</button>
+              </div>
+            </div>
           </div>
-          <footer><br><br>Copyright</footer>
         </div>
+        <footer class="row"><br><br>
+          <p class="col-sm-12">
+            <br>Copyright
+          </p>
+        </footer>
   </body>
 </html>
