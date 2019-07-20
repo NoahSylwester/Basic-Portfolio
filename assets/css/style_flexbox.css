@@ -16,7 +16,6 @@ h1 {
 }
 
 h2 {
-  float: left;
   color: #4aaaa5;
 }
 
@@ -29,11 +28,13 @@ header {
   height: 100px;
   padding: 0px;
   border-bottom: solid 1px #dddddd;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   }
 
 button {
   font-size: 20px;
-  float: left;
   background-color: #4aaaa5;
   color: #ffffff;
   padding: 10px;
@@ -62,29 +63,26 @@ footer {
 }
 
 .pic {
-  float: left;
   margin-bottom: 20px;
   margin-right: 25px;
+  float: left;
 }
 
 .bio {
   line-height: 30px;
 }
 
-.tab_positioner {
-  visibility: hidden;
-  width: 113px;
-  float: left;
-}
-
 .title_tab {
   height: 70px;
-  width: 250px;
   background-color: #4aaaa5;
   border: solid 1px #dddddd;
   text-align: center;
-  float: left;
-  margin-top: 29px
+  margin: 29px auto 0 auto;
+  order: 1;
+  flex-wrap: nowrap;
+  flex: 1;
+  max-width: 300px;
+  min-width: 215px;
 }
 
 .tab {
@@ -106,7 +104,11 @@ footer {
   width: 500px;
   background-color: #ffffff;
   text-align: center;
-  float: right;
+  order: 2;
+  flex-flow: row nowrap;
+  flex: 1;
+  min-width: 229px;
+  max-width: 500px;
 }
 
 .background {
@@ -117,26 +119,30 @@ footer {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25em;
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
   }
 
 .main {
-  width: 800px;
-  height: 400px;
+  width: 750px;
+  height: 407px;
   padding: 25px;
   background-color: #ffffff;
   text-align: left;
-  display: inline-block;
-  margin-top: 20px;
+  margin: 20px auto auto auto;
   border: solid 2px #dddddd;
+  overflow: scroll;
 }
 
 .contact_input {
-  width: 30%;
+  width: 100%;
   line-height: 25px;
   border: solid 1px #dddddd;
   margin: 10px auto;
   text-align: left;
   font-size: 15px;
+  display: flex;
 }
 
 .message_input {
@@ -152,9 +158,9 @@ footer {
 .portfolio_container {
   width: 200px;
   height: 200px;
-  float: left;
   text-align: center;
   position: relative;
+  margin-left: 20px;
 }
 
 .portfolio_pic {
@@ -184,8 +190,8 @@ footer {
   color: #ffffff;
   font-size: 12px;
   position: absolute;
-  left: 50%;
-  margin-left: -70px;
-  bottom: 80px;
+  left: 85px;
+  margin-left: -73px;
+  bottom: 30px;
   z-index: 10;
 }
