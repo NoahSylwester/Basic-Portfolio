@@ -3,25 +3,28 @@
   padding: 0;
   border: 0;
   color: #777777;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
 }
-
-html,body{
-  height: 100%;
+body {
+  background-image: url("../images/gravel/gravel.png");
 }
 
 h1 {
   display: inline-block;
   color: #ffffff;
   margin-top: 17px;
+  font-size: 2.4rem;
 }
 
 h2 {
-  float: left;
+  /* float: left; */
   color: #4aaaa5;
 }
 
 a {
   text-decoration: none;
+  color: #777777;;
 }
 
 header {
@@ -31,17 +34,9 @@ header {
   border-bottom: solid 1px #dddddd;
   }
 
-button {
-  font-size: 20px;
-  float: left;
-  background-color: #4aaaa5;
-  color: #ffffff;
-  padding: 10px;
-  margin-top: 8px;
-}
-
 button:hover {
   background-color: #48c4bd;
+  text-decoration: none;
 }
 
 footer {
@@ -52,8 +47,17 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+}
+
+footer p {
   color: black;
   font-size: 10px;
+}
+
+.to-edge {
+  margin: 0;
+  padding: 0;
+  max-width: none;
 }
 
 .line {
@@ -71,20 +75,14 @@ footer {
   line-height: 30px;
 }
 
-.tab_positioner {
-  visibility: hidden;
-  width: 113px;
-  float: left;
-}
-
 .title_tab {
   height: 70px;
-  width: 250px;
   background-color: #4aaaa5;
   border: solid 1px #dddddd;
   text-align: center;
-  float: left;
-  margin-top: 29px
+  margin-top: 29px;
+  min-width: 280px;
+  max-width: 300px;
 }
 
 .tab {
@@ -106,35 +104,33 @@ footer {
   width: 500px;
   background-color: #ffffff;
   text-align: center;
-  float: right;
+  min-width: 215px;
 }
 
 .background {
-  margin: 0 auto;
-  min-height: 90%;
+  /* min-height: 90%;
   width: 100%;
-  background-image: url("../images/gravel/gravel.png");
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25em;
-  text-align: center;
+  text-align: center; */
   }
 
 .main {
-  width: 800px;
-  height: 400px;
+  height: 430px;
   padding: 25px;
   background-color: #ffffff;
   text-align: left;
   display: inline-block;
   margin-top: 20px;
   border: solid 2px #dddddd;
+  overflow: scroll;
 }
 
 .contact_input {
-  width: 30%;
+  width: 100%;
   line-height: 25px;
   border: solid 1px #dddddd;
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: left;
   font-size: 15px;
 }
@@ -144,7 +140,7 @@ footer {
   height: 80px;
   line-height: 25px;
   border: solid 1px #dddddd;
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: left;
   font-size: 15px;
 }
@@ -152,7 +148,6 @@ footer {
 .portfolio_container {
   width: 200px;
   height: 200px;
-  float: left;
   text-align: center;
   position: relative;
 }
@@ -179,13 +174,23 @@ footer {
 
 .banner {
   height: 17px;
-  width: 140px;
+  width: 136px;
   background-color: #4aaaa5;
   color: #ffffff;
   font-size: 12px;
   position: absolute;
-  left: 50%;
+  left: 82px;
   margin-left: -70px;
-  bottom: 80px;
+  bottom: -50px;
   z-index: 10;
+}
+
+.input-text {
+  margin-bottom: 0;
+}
+
+.btn-lg {
+  background-color: #4aaaa5;
+  margin-top: 15px;
+  color: #ffffff;
 }
